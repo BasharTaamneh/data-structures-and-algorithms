@@ -100,10 +100,7 @@ const addValues = (arr, value) => {
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
   for (let i = 0; i < times; i++) {
-      arr.push(num);
-      arr.forEach(value=>{
-        callback(value);
-      });
+    callback(arr,num);
   }
 return arr;
 };
@@ -128,6 +125,14 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let newarr=[];
+  availableItems.forEach(value=>{
+    if(value.available==true)
+    {
+      newarr.push(value.name);
+    }
+  })
+return newarr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -146,6 +151,24 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let newarr=[];
+  arr.forEach(value=>{
+    if((value % 3 == 0) && (value % 5 == 0))
+    {
+      newarr.push("Fizz Buzz");
+    }
+   
+    else if(value % 5 == 0){
+      newarr.push("Buzz");
+    }
+    else if  (value % 3 == 0){
+      newarr.push("Fizz");
+    }
+    else{
+      newarr.push(value);
+    }
+  })
+  return newarr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -191,7 +214,11 @@ describe('Testing challenge 5', () => {
 });
 
 describe('Testing challenge 6', () => {
-  const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
+  const inventory = [{ name: 'apples', available: true },
+   { name: 'pears', available: true }, 
+   { name: 'oranges', available: false },
+    { name: 'bananas', available: true }, 
+    { name: 'blueberries', available: false }];
 
   test('It should only add the available items to the list', () => {
     expect(createList(inventory)).toStrictEqual(['apples', 'pears', 'bananas']);
@@ -199,7 +226,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
