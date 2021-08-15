@@ -43,7 +43,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 {
   item: 'switch'
-  purchasePrice: 399
+  purchasePrice::: 399
 }
 
 ------------------------------------------------------------------------------------------------ */
