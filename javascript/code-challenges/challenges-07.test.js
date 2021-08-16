@@ -26,8 +26,19 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
+  let Arr = starWarsArr.sort((x, y) => {
 
-  //.............
+    if (Number(x.height) < Number(y.height))
+
+      return 1;
+
+    else if (Number(x.height) > Number(y.height))
+
+      {return -1};
+      
+  });
+
+  return Arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,6 +49,9 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
+  arr.splice(idx,3);
+
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +61,8 @@ Write a function named joinArray that takes an array and joins all of the elemen
 ------------------------------------------------------------------------------------------------ */
 
 const joinArray = (arr) => {
-  // Solution code here...
+  // Solution code here... 
+ return (arr.join(' '));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,6 +81,11 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  for(let i = 0; i<= str.length;i++)
+  {
+    result.push(str.substring(i,str.length));
+
+  }
   return result;
 };
 
@@ -79,6 +99,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+ return (arr.split(""));
 };
 
 
@@ -126,6 +147,21 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  recipe.ingredients.forEach(itmes => {
+    let spa_ce=0;
+    let str= " ";
+    
+    for(let i=0;i<itmes.length;i++){
+
+      if(itmes[i] === ' ' && spa_ce < 2){
+        spa_ce++;
+      }
+    else  if(spa_ce>1){
+        str+=itmes[i];
+      }}
+    result.push(str.trim());
+    //The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
+  });
   return result;
 };
 
