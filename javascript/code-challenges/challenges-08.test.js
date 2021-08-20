@@ -126,10 +126,9 @@ const isCapitalized = (str) => {
   // Solution code here...
   
   let reg= /\b[A-Z](\w)*/g;
-  reg.test(str);
-  // console.log(str.match(reg));
-  let arr=str.match(reg);
- return arr;
+  let match=str.match(reg)
+  if(match){return(match);}
+  else{return([])}
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -162,7 +161,7 @@ Do not use the vertical bar (pipe) in your pattern.
 
 const matchMonth = (input) => {
   // Solution code here...
-  let regex = /.october/g;
+  let regex = /^.[oct]/g;
   return (regex.test(input))
 };
 
