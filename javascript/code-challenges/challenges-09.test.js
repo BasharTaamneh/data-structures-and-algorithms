@@ -13,7 +13,7 @@ const maxInArray = (arr) => {
   let max = arr.reduce(function (a, b) {
     return Math.max(a, b);
   }, 0);
-  return (max)
+  return (max);
 };
 
 /* ------------------------------------------------------------------------------------------------
