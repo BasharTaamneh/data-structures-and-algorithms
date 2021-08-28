@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+/* eslint-disable indent */
 'use strict';
 
 /* ------------------------------------------------------------------------------------------------
@@ -7,9 +9,13 @@ Write a function named longestString that takes in an array of strings and retur
 ------------------------------------------------------------------------------------------------ */
 
 const longestString = (arr) => {
-// Solution code here...
+  // Solution code here...
+  let length = [...arr];
+
+  return arr.indexOf(length.sort((x, y) => y.length - x.length)[0]);
 };
-  
+// eslint-disable-next-line no-trailing-spaces
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -20,6 +26,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 
 const firstLetters = (arr) => {
   // Solution code here...
+  return arr.map(item => item[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,6 +39,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  return arr.filter(item => item.includes(':)'));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,6 +52,8 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  return arr.map(item =>item.split("(")[1].split(") ").join("").split("-").join(""));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,6 +66,8 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  return str.split("").filter((item, idx) => idx % 2 !== 0).join("");
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,6 +78,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  return arr.every(item => item.includes(":)"));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -158,7 +172,7 @@ describe('Testing challenge 1', () => {
   test('It should return an index position of the longest string', () => {
     const strArray1 = ['Ginger', 'Goose', 'Tangerine', 'Rosie', 'Mario', 'Malaki']
     const strArray2 = [];
-    const strArray3= ['Ginger']
+    const strArray3 = ['Ginger']
 
     expect(longestString(strArray1)).toStrictEqual(2);
     expect(longestString(strArray2)).toStrictEqual(-1);
