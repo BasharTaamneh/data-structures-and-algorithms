@@ -140,8 +140,6 @@ Here is an example of the input:
 const sortByPrice = (arr) => {
   // Solution code here...
 
-  
-
   arr.sort((x, y) => {
     if (x.price > y.price)
       return 1;
