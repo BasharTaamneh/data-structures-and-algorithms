@@ -77,5 +77,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
  | Challenges       |         links        |
   | ----------- | -------------------- |
-  | array-reverse  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-reverse/README)    |
- | array-insert-shift  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-insert-shift/README)    |
+  | array-reverse  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-reverse/)    |
+ | array-insert-shift  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-insert-shift/)    |
