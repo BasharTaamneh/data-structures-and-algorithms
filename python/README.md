@@ -1,15 +1,6 @@
 # Data Structures and Algorithms
 
 ## Language: `Python`
-___
-
- | Challenges       |         links        |
-  | ----------- | -------------------- |
-  | array-reverse  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-reverse/)    |
- | array-insert-shift  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-insert-shift/)    |
-
-
-___
 
 ### Folder and Challenge Setup
 
