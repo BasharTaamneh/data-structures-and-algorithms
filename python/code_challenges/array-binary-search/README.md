@@ -19,7 +19,7 @@ The program takes a list and key as input and finds the index of the key in the 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![array_insert_shift](insertShift_Arrang)
+![array-binary-search](insertShift_Arrang)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
