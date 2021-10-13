@@ -3,14 +3,14 @@
 # pylint: disable=missing-module-docstring
 
 
-def binary_search(alist, checkkey):
+def binary_search(arrlist, checkkey):
     start = 0
-    end = len(alist)
+    end = len(arrlist)
     while start < end:
         mid = (start + end)//2
-        if alist[mid] > checkkey:
+        if arrlist[mid] > checkkey:
             end = mid
-        elif alist[mid] < checkkey:
+        elif arrlist[mid] < checkkey:
             start = mid + 1
         else:
             return mid
