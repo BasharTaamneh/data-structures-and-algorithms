@@ -30,4 +30,4 @@ The program takes a list and key as input and finds the index of the key in the 
 
 - space <== O(1)
 
-[live PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/15)
+[live PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/16)
