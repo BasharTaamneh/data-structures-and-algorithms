@@ -17,5 +17,5 @@ def binary_search(arrlist, checkkey):
     return -1
 
 
-print(binary_search([11, 22, 33, 44, 55, 66, 77], 44))
-print(binary_search([1, 2, 3, 5, 6, 7], 4))
+print(binary_search(range(44, 100), 55))
+print(binary_search([1, 2, 3, 5, 2, 7], 2))
