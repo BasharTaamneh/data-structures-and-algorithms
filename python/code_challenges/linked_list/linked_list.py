@@ -76,7 +76,7 @@ class LinkedList:
             self.current = self.current.next
         return False
 
-    def to_string(self):
+    def __str__(self):
         """
         Returns a formatted string representing all the values in the Linked List.
         Arguments:
