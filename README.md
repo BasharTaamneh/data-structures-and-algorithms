@@ -11,6 +11,7 @@ ___
 | array-binary-search  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-binary-search/)    |
 | linked_list  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/)    |
 
+
 ___
 
 ### Folder and Challenge Setup
