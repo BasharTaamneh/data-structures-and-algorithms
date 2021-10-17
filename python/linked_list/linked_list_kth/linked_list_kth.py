@@ -1,0 +1,3 @@
+
+class Kth:
+    pass
