@@ -46,18 +46,18 @@ def test_node_is_a_Node():
     assert actual == expected
 
 
-# def test_node_without_value():
-#     with pytest.raises(TypeError):
-#         node = Node()
+def test_node_without_value():
+    with pytest.raises(TypeError):
+        node = Node()
 
 
-# def test_new_linked_list_is_empty():
-#     expected = None
+def test_new_linked_list_is_empty():
+    expected = None
 
-#     ll = LinkedList()
-#     actual = ll.head
+    ll = LinkedList()
+    actual = ll.head
 
-#     assert actual == expected
+    assert actual == expected
 
 
 # def test_linked_list_insert():
