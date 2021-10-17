@@ -69,25 +69,25 @@ def test_linked_list_insert():
     assert actual == expected
 
 
-# def test_link_insert_multiple():
-#     # Arrange
-#     ll = LinkedList()
-#     ll.insert("1")
-#     ll.insert("2")
-#     ll.insert("3")
-#     expected_third = "1"
-#     expected_second = "2"
-#     expected_first = "3"
+def test_link_insert_multiple():
+    # Arrange
+    ll = LinkedList()
+    ll.insert("1")
+    ll.insert("2")
+    ll.insert("3")
+    expected_third = "1"
+    expected_second = "2"
+    expected_first = "3"
 
-#     # Act
-#     actual_first = ll.head.value
-#     actual_second = ll.head.next.value
-#     actual_third = (ll.head.next).next.value
+    # Act
+    actual_first = ll.head.value
+    actual_second = ll.head.next.value
+    actual_third = (ll.head.next).next.value
 
-#     # Assert
-#     assert actual_first == expected_first
-#     assert actual_second == expected_second
-#     assert actual_third == expected_third
+    # Assert
+    assert actual_first == expected_first
+    assert actual_second == expected_second
+    assert actual_third == expected_third
 
 
 # def test_link_head_pointer():
