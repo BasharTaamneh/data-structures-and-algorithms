@@ -20,9 +20,12 @@ class Node:
 
     """
 
-    def __init__(self, data, next_=None):
-        self.data = data
-        self.next = next_
+    try:
+        def __init__(self, value: any, next_=None):
+            self.value = value
+            self.next = next_
+    except TypeError as err:
+        raise
 
 
 class LinkedList:
@@ -41,6 +44,7 @@ class LinkedList:
 
     def __init__(self):
         self.head = None
+        self.current = self.head
 
     def insert(self, value):
         """"
@@ -54,3 +58,38 @@ class LinkedList:
         """
         # create new node
         self.head = Node(value, self.head)
+        self.current = self.head
+
+    def includes(self, value):
+        """
+        Indicates whether that value exists as a Node’s value somewhere within the list.
+        Arguments:
+        value: any
+        Return: Boolean
+        """
+        self.current = self.head
+
+        while self.current != None:
+            print("FLAG", self.current.value)
+            if self.current.value == value:
+                return True
+            self.current = self.current.next
+        return False
+
+    def to_string(self):
+        """
+        Returns a formatted string representing all the values in the Linked List.
+        Arguments:
+        None
+        Return: String Output
+        """
+        self.current = self.head
+
+        output = ""
+
+        while self.current != None:
+            print("PRINT", self.current.value)
+            output = output + (f"{ {self.current.value} } -> ")
+            self.current = self.current.next
+        output = output + "NULL"
+        return(output)
