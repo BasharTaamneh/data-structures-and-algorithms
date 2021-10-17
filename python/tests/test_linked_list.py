@@ -135,17 +135,17 @@ def test_link_includes_false():
     assert actual == expected
 
 
-# def test_link_to_string():
-#     #Arrange
-#     ll = LinkedList()
-#     ll.insert(4)
-#     ll.insert("3")
-#     ll.insert("bashar")
-#     ll.insert("taamneh")
-#     expected = "{'taamneh'} -> {'bashar'} -> {'3'} -> {4} -> NULL"
+def test_link_to_string():
+    #Arrange
+    ll = LinkedList()
+    ll.insert(4)
+    ll.insert("3")
+    ll.insert("bashar")
+    ll.insert("taamneh")
+    expected = "{'taamneh'} -> {'bashar'} -> {'3'} -> {4} -> NULL"
 
-#     #Act
-#     actual = str(ll)
+    #Act
+    actual = str(ll)
 
-#     #Assert
-#     assert actual == expected
+    #Assert
+    assert actual == expected
