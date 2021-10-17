@@ -105,19 +105,19 @@ def test_link_head_pointer():
     assert actual == expected
 
 
-# def test_link_includes_true():
-#     # Arrange
-#     ll = LinkedList()
-#     ll.insert("1")
-#     ll.insert("2")
-#     ll.insert("3")
-#     expected = True
+def test_link_includes_true():
+    # Arrange
+    ll = LinkedList()
+    ll.insert("1")
+    ll.insert("2")
+    ll.insert("3")
+    expected = True
 
-#     # Act
-#     actual = ll.includes("1")
+    # Act
+    actual = ll.includes("1")
 
-#     # Assert
-#     assert actual == expected
+    # Assert
+    assert actual == expected
 
 
 # def test_link_includes_false():
