@@ -3,7 +3,7 @@
 # pylint: disable=invalid-name
 # pylint: disable=missing-function-docstring
 import pytest
-from code_challenges.linked_list.linked_list import Node, LinkedList
+from linked_list.linked_list import Node, LinkedList
 
 
 def test_import():
