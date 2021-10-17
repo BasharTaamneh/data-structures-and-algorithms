@@ -120,19 +120,19 @@ def test_link_includes_true():
     assert actual == expected
 
 
-# def test_link_includes_false():
-#     # Arrange
-#     ll = LinkedList()
-#     ll.insert("1")
-#     ll.insert("2")
-#     ll.insert("3")
-#     expected = False
+def test_link_includes_false():
+    # Arrange
+    ll = LinkedList()
+    ll.insert("1")
+    ll.insert("2")
+    ll.insert("3")
+    expected = False
 
-#     # Act
-#     actual = ll.includes("10^6 VALUE")
+    # Act
+    actual = ll.includes("10^6 VALUE")
 
-#     # Assert
-#     assert actual == expected
+    # Assert
+    assert actual == expected
 
 
 # def test_link_to_string():
