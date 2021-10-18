@@ -22,7 +22,6 @@ Assign data, Initialize next as null.
         self.data = data
         self.next = None
 
-
 class LinkedList:
     """
 Linked List class contains a Node object
@@ -64,8 +63,7 @@ defined inside LinkedList.
         if prev_node is None:
             # The given previous node must inLinkedList.
             return
-        # 2. create new node &
-        #	 Put in the data
+        # 2. create new node & Put in the data
         new_node = Node(new_data)
         # 4. Make next of new Node as next of prev_node
         new_node.next = prev_node.next
@@ -89,6 +87,13 @@ defined inside LinkedList.
         # 6. Change the next of last node
         last.next = new_node
 
+        # Utility function to print the linked list
+    def printList(self):
+        temp = self.head
+        while (temp):
+            print(temp.data)
+            temp = temp.next
+
 
 # Code execution starts here
 if __name__ == '__main__':
@@ -107,6 +112,10 @@ if __name__ == '__main__':
 
     # Insert 4 at the end. So linked list becomes 1->7->6->4->None
     llist.append(4)
-
+    llist.append(400)
     # Insert 8, after 7. So linked list becomes 1 -> 7-> 8-> 6-> 4-> None
     llist.insertAfter(llist.head.next, 8)
+
+    print('Created linked list is:')
+    llist.printList()
+
