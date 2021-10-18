@@ -51,13 +51,12 @@ def test_node_without_value():
         node = Node()
 
 
-# def test_new_linked_list_is_empty():
-#     expected = None
+def test_new_linked_list_is_empty():
+    expected = None
+    ll = LinkedList()
+    actual = ll.head
 
-#     ll = LinkedList()
-#     actual = ll.head
-
-#     assert actual == expected
+    assert actual == expected
 
 
 # def test_linked_list_append():
