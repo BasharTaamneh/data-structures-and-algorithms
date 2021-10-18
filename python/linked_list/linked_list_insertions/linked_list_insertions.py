@@ -86,7 +86,7 @@ defined inside LinkedList.
             last = last.next
         # 6. Change the next of last node
         last.next = new_node
-
+        
         # Utility function to print the linked list
     def printList(self):
         temp = self.head
