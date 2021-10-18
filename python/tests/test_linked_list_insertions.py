@@ -59,14 +59,13 @@ def test_new_linked_list_is_empty():
     assert actual == expected
 
 
-# def test_linked_list_append():
-#     # Arrange
-#     expected = None
-#     ll = LinkedList()
-#     # Act
-#     actual = ll.append("")
-#     assert actual == expected
-
+def test_add_a_node_to_the_end_of_the_linked_list():
+    # Arrange
+    expected_1 = None
+    ll = LinkedList()
+    # Act
+    actual_1 = ll.append("")
+    assert actual_1 == expected_1
 
 # def test_link_append_multiple():
 #     # Arrange
