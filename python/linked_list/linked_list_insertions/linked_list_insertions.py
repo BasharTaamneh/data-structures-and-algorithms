@@ -86,7 +86,7 @@ defined inside LinkedList.
             last = last.next
         # 6. Change the next of last node
         last.next = new_node
-        
+
         # Utility function to print the linked list
     def printList(self):
         temp = self.head
@@ -112,7 +112,6 @@ if __name__ == '__main__':
 
     # Insert 4 at the end. So linked list becomes 1->7->6->4->None
     llist.append(4)
-    llist.append(400)
     # Insert 8, after 7. So linked list becomes 1 -> 7-> 8-> 6-> 4-> None
     llist.insertAfter(llist.head.next, 8)
 

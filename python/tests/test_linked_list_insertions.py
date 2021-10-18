@@ -87,6 +87,23 @@ def test_add_a_multiple_node_to_the_end_of_the_linked_list():
     assert actual_third == expected_third
 
 
+def test_insert_a_node_before_a_node_located_i_the_middle_of_a_linked_list():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    actual_1 = 2
+    # Act
+    ll.insertAfter(ll.head.next, 8)
+    expected_1 = ll.head.next.data
+    # Assert
+    assert ll.head.data == 1
+    assert ll.head.next.data == 2
+    assert (ll.head.next).next.data == 8
+    assert actual_1 == expected_1
+
+
 # def test_link_head_pointer():
 #     # Arrange
 #     ll = LinkedList()
