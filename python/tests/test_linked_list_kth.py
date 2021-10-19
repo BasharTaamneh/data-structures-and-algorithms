@@ -1,6 +1,7 @@
 from linked_list.linked_list_kth.linked_list_kth import LinkedList, Node
 import pytest
 
+
 def test_import():
     assert LinkedList()
     assert Node(1)
