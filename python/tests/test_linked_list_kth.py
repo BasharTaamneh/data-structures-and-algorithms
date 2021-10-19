@@ -46,3 +46,10 @@ def test_node_without_value():
     with pytest.raises(TypeError):
         node = Node()
 
+
+def test_new_linked_list_is_empty():
+    expected = None
+    ll = LinkedList()
+    actual = ll.head
+
+    assert actual == expected
