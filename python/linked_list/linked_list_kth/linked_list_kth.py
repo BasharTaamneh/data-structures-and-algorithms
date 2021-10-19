@@ -69,6 +69,8 @@ Iterative function to return the k'th node from the end in a linked list
             curr = curr.next_
             n = n + 1
         # if the total number of nodes is more than or equal to `k`
+        if k < 0:
+            return "'k' value was rejected --> negative value"
         if n >= k:
             # return (n-k+1)'th node from the beginning
             curr = self.head
@@ -80,10 +82,10 @@ Iterative function to return the k'th node from the end in a linked list
             return "'Kth' --> is out of range"
 
 
-if __name__ == '__main__':
-    ll = LinkedList()
-    ll.append(1)
-    ll.append(3)
-    ll.append(8)
-    ll.append(2)
-    print(ll.getKthFromEnd(6))
+# if __name__ == '__main__':
+#     ll = LinkedList()
+#     ll.append(1)
+#     ll.append(3)
+#     ll.append(8)
+#     ll.append(2)
+#     print(ll.getKthFromEnd(-1))
