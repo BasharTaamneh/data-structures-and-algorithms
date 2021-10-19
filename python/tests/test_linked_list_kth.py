@@ -137,3 +137,17 @@ def test_Where_k_and_the_length_of_the_list_are_the_same():
     actual = ll.getKthFromEnd(4)
     # Assert
     assert actual == expected
+
+
+def test_Where_k_is_nor_a_positive_integer():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = "'k' value was rejected --> negative value"
+    # Act
+    actual = ll.getKthFromEnd(-1)
+    # Assert
+    assert actual == expected
