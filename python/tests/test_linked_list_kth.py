@@ -173,3 +173,14 @@ def test_kth_Where_the_linked_list_is_of_a_size_1_K_not_a_positive_integer():
     actual = ll.getKthFromEnd(-1)
     # Assert
     assert actual == expected
+
+
+def test_kth_Where_the_linked_list_is_of_a_size_1_and_the_length_of_the_list_are_the_same():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    expected = "'Kth' --> is out of range"
+    # Act
+    actual = ll.getKthFromEnd(1)
+    # Assert
+    assert actual == expected
