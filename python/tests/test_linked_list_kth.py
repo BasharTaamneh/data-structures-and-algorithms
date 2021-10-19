@@ -16,3 +16,15 @@ def test_node_has_int_data():
 
     # Assert
     assert actual == expected
+
+
+def test_node_has_str_data():
+    # Arrange any data that you need to run your test
+    expected = "a"
+
+    # Act on the subject of the test to produce some actual output
+    node = Node("a")
+    actual = node.data
+
+    # Assert
+    assert actual == expected
