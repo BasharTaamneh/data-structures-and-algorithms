@@ -151,3 +151,15 @@ def test_Where_k_is_nor_a_positive_integer():
     actual = ll.getKthFromEnd(-1)
     # Assert
     assert actual == expected
+
+
+def test_kth_Where_the_linked_list_is_of_a_size_1_():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    expected = 1
+    # Act
+    actual = ll.getKthFromEnd(0)
+    # Assert
+    assert actual == expected
+
