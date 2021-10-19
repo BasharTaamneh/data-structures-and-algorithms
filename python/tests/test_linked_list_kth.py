@@ -123,3 +123,17 @@ def test_Where_k_is_greater_than_the_length_of_the_linked_list():
     actual = ll.getKthFromEnd(6)
     # Assert
     assert actual == expected
+
+
+def test_Where_k_and_the_length_of_the_list_are_the_same():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = "'Kth' --> is out of range"
+    # Act
+    actual = ll.getKthFromEnd(4)
+    # Assert
+    assert actual == expected
