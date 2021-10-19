@@ -95,3 +95,17 @@ def test_get_Kth_From_the_end_of_the_linked_list_1():
     actual = ll.getKthFromEnd(0)
     # Assert
     assert actual == expected
+
+
+def test_get_Kth_From_the_end_of_the_linked_list_2():
+    # Arrange
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = 3
+    # Act
+    actual = ll.getKthFromEnd(2)
+    # Assert
+    assert actual == expected
