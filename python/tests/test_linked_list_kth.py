@@ -1,5 +1,5 @@
 from linked_list.linked_list_kth.linked_list_kth import LinkedList, Node
-
+import pytest
 
 def test_import():
     assert LinkedList()
@@ -40,3 +40,9 @@ def test_node_is_a_Node():
 
     # Assert
     assert actual == expected
+
+
+def test_node_without_value():
+    with pytest.raises(TypeError):
+        node = Node()
+
