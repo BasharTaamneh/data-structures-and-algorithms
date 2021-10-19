@@ -62,3 +62,22 @@ def test_add_a_node_to_the_end_of_the_linked_list():
     # Act
     actual_1 = ll.append("")
     assert actual_1 == expected_1
+
+
+def test_add_a_multiple_node_to_the_end_of_the_linked_list():
+    # Arrange
+    ll = LinkedList()
+    ll.append("1")
+    ll.append("2")
+    ll.append("3")
+    expected_third = "1"
+    expected_second = "2"
+    expected_first = "3"
+    # Act
+    actual_first = (ll.head.next_).next_.data
+    actual_second = ll.head.next_.data
+    actual_third = ll.head.data
+    # Assert
+    assert actual_first == expected_first
+    assert actual_second == expected_second
+    assert actual_third == expected_third
