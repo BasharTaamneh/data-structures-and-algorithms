@@ -22,13 +22,13 @@ class Queue:
 
         if self.front is None:
             raise Exception("Dequeue from empty queue.")
+
         value = self.front.value
         self.front = self.front.next
 
         if self.front is None:
             self.rear = None
         return value
-
 
     def peek(self):
             if self.front == None:
@@ -38,6 +38,8 @@ class Queue:
 
     def is_empty(self):
         return not self.front
+
+#---------------------#
 
 class Stack:
 
@@ -65,4 +67,4 @@ class Stack:
             return self.top.value
 
     def is_empty(self):
-        pass
+        return self.top is None
