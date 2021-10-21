@@ -27,12 +27,12 @@ def test_push_stack(stack):
     assert actual == expected
 
 
-# def test_pop(stack):
-#     """
-#     """
-#     actual = stack.pop()
-#     expected = "cat"
-#     assert actual == expected
+def test_pop_stack(stack):
+    """
+    """
+    actual = stack.pop()
+    expected = "cat"
+    assert actual == expected
 
 
 # def test_is_empty(stack):
