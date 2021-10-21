@@ -29,11 +29,11 @@ def test_stack_is_empty():
     assert Stack().is_empty()
 
 
-# def test_peek_stack(stack):
-#     # stack = Stack()
-#     actual = stack.peek()
-#     expected = 'cat'
-#     assert actual == expected
+def test_peek_stack(stack):
+    # stack = Stack()
+    actual = stack.peek()
+    expected = 'cat'
+    assert actual == expected
 
 
 # def test_peek_with_empty_stack():
