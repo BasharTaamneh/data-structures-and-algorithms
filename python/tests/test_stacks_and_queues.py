@@ -67,10 +67,10 @@ def test_enqueue(queue):
     expected = "Python"
     assert actual == expected
 
-# def test_dequeue(queue):
-#     actual = queue.front.value
-#     expected = 1
-#     assert actual == expected
+def test_dequeue(queue):
+    actual = queue.front.value
+    expected = 1
+    assert actual == expected
 
 
 # def test_dequeue_with_empty_queue():
