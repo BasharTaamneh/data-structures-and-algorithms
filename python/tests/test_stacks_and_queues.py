@@ -9,6 +9,15 @@ def test_stacks_and_queues():
 
 #stack_test---------------------------------#
 
+#decorator
+@pytest.fixture
+def stack():
+    stack = Stack()
+    stack.push(1)
+    stack.push(2)
+    stack.push("cat")
+    return stack
+
 def test_push_stack(stack):
     """
     """
@@ -40,31 +49,23 @@ def test_peek_with_empty_stack():
     with pytest.raises(Exception):
         assert Stack() == "This stack is empty"
 
-#decorator
-@pytest.fixture
-def stack():
-    stack = Stack()
-    stack.push(1)
-    stack.push(2)
-    stack.push("cat")
-    return stack
+
 
 # # queue_test---------------------------------#
 
 # # decorator
-# @pytest.fixture
-# def queue():
-#     queue = Queue()
-#     queue.enqueue(1)
-#     queue.enqueue(2)
-#     queue.enqueue("Python")
-#     return queue
+@pytest.fixture
+def queue():
+    queue = Queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue("Python")
+    return queue
 
-# def test_enqueue(queue):
-
-#     actual = queue.rear.value
-#     expected = "Python"
-#     assert actual == expected
+def test_enqueue(queue):
+    actual = queue.rear.value
+    expected = "Python"
+    assert actual == expected
 
 # def test_dequeue(queue):
 #     actual = queue.front.value
