@@ -77,14 +77,14 @@ def test_dequeue_with_empty_queue():
     with pytest.raises(Exception):
         assert Queue() == "Dequeue from empty queue."
 
-# def test_peek_queue(queue):
-#     actual = queue.peek()
-#     expected = 1
-#     assert actual == expected
+def test_peek_queue(queue):
+    actual = queue.peek()
+    expected = 1
+    assert actual == expected
 
-# def test_peek_with_empty_queue():
-#     with pytest.raises(Exception):
-#         assert Queue() == "This Queue is empty"
+def test_peek_with_empty_queue():
+    with pytest.raises(Exception):
+        assert Queue() == "This Queue is empty"
 
 # def test_is_empty():
 #     assert Queue().is_empty()
