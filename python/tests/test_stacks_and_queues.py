@@ -86,5 +86,6 @@ def test_peek_with_empty_queue():
     with pytest.raises(Exception):
         assert Queue() == "This Queue is empty"
 
-# def test_is_empty():
-#     assert Queue().is_empty()
+
+def test_queue_is_empty():
+    assert Queue().is_empty()
