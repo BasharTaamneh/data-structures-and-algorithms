@@ -36,9 +36,9 @@ def test_peek_stack(stack):
     assert actual == expected
 
 
-# def test_peek_with_empty_stack():
-#     with pytest.raises(Exception):
-#         assert Stack() == "This stack is empty"
+def test_peek_with_empty_stack():
+    with pytest.raises(Exception):
+        assert Stack() == "This stack is empty"
 
 #decorator
 @pytest.fixture
