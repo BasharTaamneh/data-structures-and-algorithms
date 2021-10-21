@@ -73,9 +73,9 @@ def test_dequeue(queue):
     assert actual == expected
 
 
-# def test_dequeue_with_empty_queue():
-#     with pytest.raises(Exception):
-#         assert Queue() == "Dequeue from empty queue."
+def test_dequeue_with_empty_queue():
+    with pytest.raises(Exception):
+        assert Queue() == "Dequeue from empty queue."
 
 # def test_peek_queue(queue):
 #     actual = queue.peek()
