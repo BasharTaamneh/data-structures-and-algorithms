@@ -97,7 +97,8 @@ llist2.append(10)
 llist2.append(12)
 llist2.append(15)
 llist2.merge(llist1, llist2)
-
+dublist = []
 for _ in llist1.merge(llist1, llist2):
-    print(_)
+    dublist.append(_)
 
+print(dublist)

@@ -29,3 +29,13 @@ def test_zip_tow_list_printTHe_first(llist1, llist2):
         actual.append(i)
     expected = [1, 5, 3, 9, 2, 10, 4, 12]
     assert actual == expected
+
+
+def test_zip_tow_list_printTHe_second(llist1, llist2):
+    actual = []
+    for i in llist2.merge(llist1, llist2):
+        actual.append(i)
+    expected = [15]
+    assert actual == expected
+
+
