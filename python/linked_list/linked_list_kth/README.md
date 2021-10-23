@@ -7,8 +7,8 @@ calculate the total number of nodes n in the linked list first, then the K Th no
 
 ## BIG O_________
 
-- >time(Kth) --> O(n)
-- >space(Kth) --> O(1)
+- > time(Kth) --> O(n)
+- > space(Kth) --> O(1)
 
 
 ## Testing
@@ -25,3 +25,5 @@ calculate the total number of nodes n in the linked list first, then the K Th no
 
 ---
 
+## whiteboard proces
+![](kth.png)
