@@ -9,8 +9,9 @@
 
 ## BIG O_________
 
-- >time(insert) --> O(1)
-- >space(insert) --> O(n)
+- > push <-- O(1)
+- > append <-- O(n)
+- > insertafter <--O(1)
 
 ## Testing
 
@@ -42,3 +43,5 @@ insert after
 arguments: value, new value
 adds a new node with the given new value immediately after the first node that has the value specified
 ```
+## whiteboard proces
+![](insrtions.png)
