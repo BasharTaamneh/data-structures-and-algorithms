@@ -139,13 +139,13 @@ def test_link_to_string():
     #Arrange
     ll = LinkedList()
     ll.insert(4)
-    ll.insert("THIRD VALUE")
-    ll.insert("SECOND VALUE")
-    ll.insert("FIRST VALUE")
-    expected = "{'FIRST VALUE'} -> {'SECOND VALUE'} -> {'THIRD VALUE'} -> {4} -> NULL"
+    ll.insert("3")
+    ll.insert("bashar")
+    ll.insert("taamneh")
+    expected = "{'taamneh'} -> {'bashar'} -> {'3'} -> {4} -> NULL"
 
     #Act
-    actual = ll.to_string()
+    actual = str(ll)
 
     #Assert
     assert actual == expected
