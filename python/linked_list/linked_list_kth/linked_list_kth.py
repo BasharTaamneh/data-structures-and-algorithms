@@ -1,4 +1,7 @@
 
+class Kth:
+    pass
+
 
 # A Linked List Node
 class Node:
@@ -90,3 +93,4 @@ if __name__ == '__main__':
     ll.append(8)
     ll.append(2)
     print(ll.getKthFromEnd(0))
+

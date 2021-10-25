@@ -1,3 +1,13 @@
+
+
+# from linked_list.linked_list_kth.linked_list_kth import Kth
+
+from linked_list.linked_list_kth.linked_list_kth import Kth
+
+
+def test_import():
+    assert Kth()
+
 from linked_list.linked_list_kth.linked_list_kth import LinkedList, Node
 import pytest
 
@@ -185,3 +195,4 @@ def test_kth_Where_the_linked_list_is_of_a_size_1_and_the_length_of_the_list_are
     actual = ll.getKthFromEnd(1)
     # Assert
     assert actual == expected
+
