@@ -1,13 +1,13 @@
-
 # pylint: disable=missing-module-docstring
 # pylint: disable=invalid-name
 # pylint: disable=missing-function-docstring
 import pytest
-from linked_list.linked_list import Node, LinkedList
+from linked_list.linked_list_insertions.linked_list_insertions import Node, LinkedList
 
 
 def test_import():
     assert Node(1)
+    assert LinkedList()
 
 
 def test_node_has_int_data():
@@ -16,7 +16,7 @@ def test_node_has_int_data():
 
     # Act on the subject of the test to produce some actual output
     node = Node(1)
-    actual = node.value
+    actual = node.data
 
     # Assert
     assert actual == expected
@@ -28,7 +28,7 @@ def test_node_has_str_data():
 
     # Act on the subject of the test to produce some actual output
     node = Node("a")
-    actual = node.value
+    actual = node.data
 
     # Assert
     assert actual == expected
@@ -39,7 +39,7 @@ def test_node_is_a_Node():
     expected = "Node"
 
     # Act on the subject of the test to produce some actual output
-    node = Node(1)
+    node = Node("")
     actual = type(node).__name__
 
     # Assert
@@ -53,99 +53,54 @@ def test_node_without_value():
 
 def test_new_linked_list_is_empty():
     expected = None
-
     ll = LinkedList()
     actual = ll.head
 
     assert actual == expected
 
 
-def test_linked_list_insert():
+def test_add_a_node_to_the_end_of_the_linked_list():
     # Arrange
-    expected = None
+    expected_1 = None
     ll = LinkedList()
     # Act
-    actual = ll.insert("")
-    assert actual == expected
+    actual_1 = ll.append("")
+    assert actual_1 == expected_1
 
 
-def test_link_insert_multiple():
+def test_add_a_multiple_node_to_the_end_of_the_linked_list():
     # Arrange
     ll = LinkedList()
-    ll.insert("1")
-    ll.insert("2")
-    ll.insert("3")
+    ll.append("1")
+    ll.append("2")
+    ll.append("3")
     expected_third = "1"
     expected_second = "2"
     expected_first = "3"
-
     # Act
-    actual_first = ll.head.value
-    actual_second = ll.head.next.value
-    actual_third = (ll.head.next).next.value
-
+    actual_first = (ll.head.next).next.data
+    actual_second = ll.head.next.data
+    actual_third = ll.head.data
     # Assert
     assert actual_first == expected_first
     assert actual_second == expected_second
     assert actual_third == expected_third
 
 
-def test_link_head_pointer():
+def test_insert_a_node_before_a_node_located_i_the_middle_of_a_linked_list():
     # Arrange
     ll = LinkedList()
-    ll.insert("1")
-    ll.insert("2")
-    ll.insert("3")
-    expected = "3"
-
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    actual_1 = 2
     # Act
-    actual = ll.head.value
-
+    ll.insertAfter(ll.head.next, 8)
+    expected_1 = ll.head.next.data
     # Assert
-    assert actual == expected
+    assert ll.head.data == 1
+    assert ll.head.next.data == 2
+    assert (ll.head.next).next.data == 8
+    assert actual_1 == expected_1
 
 
-def test_link_includes_true():
-    # Arrange
-    ll = LinkedList()
-    ll.insert("1")
-    ll.insert("2")
-    ll.insert("3")
-    expected = True
-
-    # Act
-    actual = ll.includes("1")
-
-    # Assert
-    assert actual == expected
-
-
-def test_link_includes_false():
-    # Arrange
-    ll = LinkedList()
-    ll.insert("1")
-    ll.insert("2")
-    ll.insert("3")
-    expected = False
-
-    # Act
-    actual = ll.includes("10^6 VALUE")
-
-    # Assert
-    assert actual == expected
-
-
-def test_link_to_string():
-    #Arrange
-    ll = LinkedList()
-    ll.insert(4)
-    ll.insert("3")
-    ll.insert("bashar")
-    ll.insert("taamneh")
-    expected = "{'taamneh'} -> {'bashar'} -> {'3'} -> {4} -> NULL"
-
-    #Act
-    actual = str(ll)
-
-    #Assert
-    assert actual == expected

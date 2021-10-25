@@ -16,6 +16,7 @@ ___
 | linked_list_zip  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_zip/)    |
 | stack_queue_pseudo  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_pseudo/)    |
 | stack_queue_animal_shelter  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_animal_shelter/)    |
+
 ___
 
 ### Folder and Challenge Setup
