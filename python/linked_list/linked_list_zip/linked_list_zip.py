@@ -54,6 +54,7 @@ Iterative function to return the k'th node from the end in a linked list
         last.next_ = new_node
 
 
+
     # Function to print linked list from the Head
     def printList(self):
         temp = self.head
@@ -66,6 +67,7 @@ Iterative function to return the k'th node from the end in a linked list
     # Since head of first list never changes
     # but head of second list/ may change,
     # we need single pointer for first list and double pointer for second list.
+
     def merge(self, p, q):
         p_curr = p.head
         q_curr = q.head
@@ -86,6 +88,32 @@ Iterative function to return the k'th node from the end in a linked list
             q_curr = q_next
             q.head = q_curr
 
+            # yield linked list from the Head
+        while self.head != None:
+            yield self.head.data
+            self.head = self.head.next_
+
+
+
+# # Driver program to test above functions
+llist1 = LinkedList()
+llist2 = LinkedList()
+llist1.append(1)
+llist1.append(3)
+llist1.append(2)
+llist1.append(4)
+llist2.append(5)
+llist2.append(9)
+llist2.append(10)
+llist2.append(12)
+llist2.append(15)
+llist2.merge(llist1, llist2)
+dublist = []
+for _ in llist1.merge(llist1, llist2):
+    dublist.append(_)
+
+print(dublist)
+
 # # Driver program to test above functions
 llist1 = LinkedList()
 llist2 = LinkedList()
@@ -101,3 +129,4 @@ llist2.merge(llist1, llist2)
 llist1.printList()
 print("......................")
 llist2.printList()
+
