@@ -25,6 +25,15 @@ def test_AnimalShelter_enqueue_anipt_ether_dog_or_cat():
     assert actual == expected
 
 
+def test_AnimalShelter_dequeue_anipt_ether_dog_or_cat():
+    shilter = AnimalShelter()
+    cat1 = Cat("citty")
+    shilter.enqueue(cat1)
+    actual = shilter.dequeue("mouse")
+    expected = None
+    assert actual == expected
+
+
 def test_AnimalShelter_dequeue_enqueue_cat():
     shilter = AnimalShelter()
     cat1 = Cat("citty")
