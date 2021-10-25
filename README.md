@@ -10,8 +10,14 @@ ___
  | array-insert-shift  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-insert-shift/)    |
 | array-binary-search  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-binary-search/)    |
 | linked_list  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/)    |
+
+
+
+
 | linked_list_kth  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_kth)    |
+
 | linked_list_insertions  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_insertions/)    |
+
 ___
 
 ### Folder and Challenge Setup
