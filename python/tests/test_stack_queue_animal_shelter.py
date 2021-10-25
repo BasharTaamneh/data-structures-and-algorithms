@@ -32,3 +32,19 @@ def test_AnimalShelter_dequeue_enqueue_cat():
     actual = shilter.dequeue("cat")
     expected = "citty"
     assert actual == expected
+
+
+def test_AnimalShelter_dequeue_enqueue_multiable_cat():
+    shilter = AnimalShelter()
+    cat1 = Cat("citty")
+    cat2 = Cat("shiry")
+    cat3 = Cat("pee")
+    shilter.enqueue(cat1)
+    shilter.enqueue(cat2)
+    shilter.enqueue(cat3)
+    actual_1 = shilter.dequeue("cat")
+    actual_2 = shilter.dequeue("cat")
+    expected_1 = "citty"
+    expected_2 = "shiry"
+    assert actual_1 == expected_1
+    assert actual_2 == expected_2
