@@ -97,34 +97,3 @@ class Anypit:
         self.name = name
         self.kind = kind
 
-
-if __name__ == '__main__':
-    shelter = AnimalShelter()
-    # dog = Dog("dog")
-    # cat = Cat("cat")
-    # mat = Cat("mat")
-    # pat = Cat("pat")
-    # bog = Dog("bog")
-    # sog = Dog("sog")
-
-    # nog = Anypit()
-    # shelter.enqueue(nog)
-    # shelter.dequeue("nog")
-
-
-    # shelter.enqueue(mat)
-    # shelter.enqueue(dog)
-    # shelter.enqueue(bog)
-    # shelter.enqueue(sog)
-    # shelter.enqueue(cat)
-    # shelter.enqueue(pat)
-
-    # print("before", shelter.head.data.name)
-    # print("before", (shelter.head.next).data.name)
-    # print("before", (shelter.head.next).next.data.name)
-
-    # shelter.dequeue("doog")
-
-    # print("after", (shelter.head.data.name))
-    # print("after", (shelter.head.next).data.name)
-    # print("after", (shelter.head.next).next.data.name)
