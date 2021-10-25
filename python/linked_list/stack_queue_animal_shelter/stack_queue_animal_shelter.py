@@ -107,8 +107,8 @@ if __name__ == '__main__':
     # bog = Dog("bog")
     # sog = Dog("sog")
 
-    nog = Anypit("nog")
-    shelter.enqueue(nog)
+    # nog = Anypit()
+    # shelter.enqueue(nog)
     # shelter.dequeue("nog")
 
 
