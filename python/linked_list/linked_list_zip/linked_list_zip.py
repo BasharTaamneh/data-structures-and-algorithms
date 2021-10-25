@@ -17,6 +17,7 @@ Assign data, Initialize next as null.
         self.data = data
         self.next_ = None
 
+
 class LinkedList:
     """
 Linked List class contains a Node object
@@ -51,6 +52,16 @@ Iterative function to return the k'th node from the end in a linked list
             last = last.next_
         # 6. Change the next of last node
         last.next_ = new_node
+
+
+
+    # Function to print linked list from the Head
+    def printList(self):
+        temp = self.head
+        while temp != None:
+            print(temp.data)
+            temp = temp.next_
+
 
     # Main function that inserts nodes of linked list q into p at alternate positions.
     # Since head of first list never changes
@@ -102,3 +113,20 @@ for _ in llist1.merge(llist1, llist2):
     dublist.append(_)
 
 print(dublist)
+
+# # Driver program to test above functions
+llist1 = LinkedList()
+llist2 = LinkedList()
+llist = LinkedList()
+llist1.append(1)
+llist1.append(3)
+llist1.append(2)
+llist2.append(5)
+llist2.append(9)
+llist2.append(4)
+llist2.append(40)
+llist2.merge(llist1, llist2)
+llist1.printList()
+print("......................")
+llist2.printList()
+
