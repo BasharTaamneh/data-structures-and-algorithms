@@ -53,3 +53,15 @@ def test_validate_brackets_9():
     actual = validate_brackets("{")
     expected = False
     assert actual == expected
+
+
+def test_validate_brackets_10():
+    actual = validate_brackets(")")
+    expected = False
+    assert actual == expected
+
+
+def test_validate_brackets_11():
+    actual = validate_brackets("[}")
+    expected = False
+    assert actual == expected
