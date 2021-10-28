@@ -23,3 +23,9 @@ def test_validate_brackets_4():
     actual = validate_brackets("(){}[[]]")
     expected = True
     assert actual == expected
+
+
+def test_validate_brackets_5():
+    actual = validate_brackets("{}{Code}[Fellows](())")
+    expected = True
+    assert actual == expected
