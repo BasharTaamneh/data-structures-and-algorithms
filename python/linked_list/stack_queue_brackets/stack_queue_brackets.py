@@ -16,7 +16,7 @@ def validate_brackets(txt_input):
             else:
                 return False
             break
-
+ 
     if len(stack) != 0:
         return False
     else:
