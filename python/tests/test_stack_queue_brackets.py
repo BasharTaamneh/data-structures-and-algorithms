@@ -17,3 +17,9 @@ def test_validate_brackets_3():
     actual = validate_brackets("()[[Extra Characters]]")
     expected = True
     assert actual == expected
+
+
+def test_validate_brackets_4():
+    actual = validate_brackets("(){}[[]]")
+    expected = True
+    assert actual == expected
