@@ -41,3 +41,9 @@ def test_validate_brackets_7():
     actual = validate_brackets("(](")
     expected = False
     assert actual == expected
+
+
+def test_validate_brackets_8():
+    actual = validate_brackets("{(})")
+    expected = False
+    assert actual == expected
