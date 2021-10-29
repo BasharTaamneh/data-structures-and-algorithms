@@ -80,7 +80,7 @@ class BinaryTree:
 
     Methods
     ---
-    | __init__(self, res=[]): | ==> instantiate data structure with empty list
+    | __init__(self): | ==> instantiate data structure with empty list
 
     ---
     | inorder(self, root): | ==> In this traversal method, the left subtree is visited first, then the root, and later the right sub-tree.
@@ -104,8 +104,8 @@ class BinaryTree:
     Argoments: root --> (root Node)
     """
 
-    def __init__(self, res=[]):
-        self.res = res
+    def __init__(self):
+        self.res = []
 
     # In-order: left >> root >> right
     def inorder(self, root):
@@ -175,5 +175,5 @@ if __name__ == "__main__":
 
     BT = BinaryTree()
     # print(BT.inorder(root))
-    print(BT.Preorder(root))
-    # print(BT.Postorder(root))
+    # print(BT.Preorder(root))
+    print(BT.Postorder(root))

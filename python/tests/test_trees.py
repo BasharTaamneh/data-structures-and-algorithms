@@ -27,3 +27,20 @@ def test_add_a_left_child_and_right_child_to_a_single_root_node():
     assert actual_1 == expected_1
     assert actual_2 == expected_2
 
+
+def test_return_a_collection_from_a_preorder_traversal():
+    BT = BinaryTree()
+    root = Node(27)
+    root.Add(15)
+    root.Add(35)
+    root.Add(10)
+    root.Add(100)
+    root.Add(201)
+    root.Add(310)
+    root.Add(310)
+    root.Add(310)
+    actual = BT.Preorder(root)
+    expected = [27, 15, 10, 35, 100, 201, 310, 310, 310]
+    assert actual == expected
+
+
