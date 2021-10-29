@@ -1,4 +1,4 @@
-
+from collections import deque
 class Node:
     """
     class Node create a tree data structures.
@@ -137,6 +137,21 @@ class BinaryTree:
 
         self.res.append(root.data)
         return self.res
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
