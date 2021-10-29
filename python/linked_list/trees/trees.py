@@ -174,6 +174,6 @@ if __name__ == "__main__":
     # print(root.contain(100))
 
     BT = BinaryTree()
-    print(BT.inorder(root))
-    # print(BT.Preorder(root))
+    # print(BT.inorder(root))
+    print(BT.Preorder(root))
     # print(BT.Postorder(root))
