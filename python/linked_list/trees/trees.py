@@ -168,8 +168,8 @@ if __name__ == "__main__":
     #                      310
 
     # Searching for a value in a tree involves comparing the incoming value with the value exiting nodes. Here also traverse the nodes from left to right and then finally with the parent. returns True OR False.
-    # print(root.contain(1000))
-    # print(root.contain(10))
+    print(root.contain(1000))
+    print(root.contain(10))
     # print(root.contain(1020))
     # print(root.contain(100))
 
