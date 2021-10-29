@@ -44,3 +44,33 @@ def test_return_a_collection_from_a_preorder_traversal():
     assert actual == expected
 
 
+def test_return_a_collection_from_an_inorder_traversal():
+    BT = BinaryTree()
+    root = Node(27)
+    root.Add(15)
+    root.Add(35)
+    root.Add(10)
+    root.Add(100)
+    root.Add(201)
+    root.Add(310)
+    root.Add(310)
+    root.Add(310)
+    actual = BT.inorder(root)
+    expected = [10, 15, 27, 35, 100, 201, 310, 310, 310]
+    assert actual == expected
+
+
+# def test_return_a_collection_from_a_postorder_traversal():
+#     BT = BinaryTree()
+#     root = Node(27)
+#     root.Add(15)
+#     root.Add(35)
+#     root.Add(10)
+#     root.Add(100)
+#     root.Add(201)
+#     root.Add(310)
+#     root.Add(310)
+#     root.Add(310)
+#     actual = BT.Postorder(root)
+#     expected = [10, 15, 310, 310, 310, 201, 100, 35, 27]
+#     assert actual == expected
