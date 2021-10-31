@@ -1,4 +1,3 @@
-from collections import deque
 
 
 class Node:
@@ -141,6 +140,10 @@ class BinaryTree:
         return self.res
 
 
+
+
+
+
 if __name__ == "__main__":
     # create a Node class and add assign a value to the node. This becomes tree with only a root node
     root = Node(27)
@@ -154,12 +157,15 @@ if __name__ == "__main__":
     root.Add(310)
     root.Add(310)
     root.Add(310)
+    root.Add(3010)
 
     #          27
     #       /     \
     #     15       35
-    #    /        /  \
-    #  10      100   201
+    #    /           \
+    #  10            100
+    #                  \
+    #                 201
     #                  \
     #                  310
     #                    \
@@ -169,11 +175,12 @@ if __name__ == "__main__":
 
     # Searching for a value in a tree involves comparing the incoming value with the value exiting nodes. Here also traverse the nodes from left to right and then finally with the parent. returns True OR False.
     print(root.contain(1000))  # 1000 is not found / False
-    print(root.contain(10))  # 10 is found / True
+    print(root.contain(3010))  # 10 is found / True
     # print(root.contain(1020))
     # print(root.contain(100))
 
     BT = BinaryTree()
-    # print(BT.inorder(root))  # [10, 15, 27, 35, 100, 201, 310, 310, 310]
+    print(BT.inorder(root))  # [10, 15, 27, 35, 100, 201, 310, 310, 310]
     # print(BT.Preorder(root))  # [27, 15, 10, 35, 100, 201, 310, 310, 310]
-    print(BT.Postorder(root))  # [10, 15, 310, 310, 310, 201, 100, 35, 27]
+    # print(BT.Postorder(root))  # [10, 15, 310, 310, 310, 201, 100, 35, 27]
+    print(BT.tree_max_())
