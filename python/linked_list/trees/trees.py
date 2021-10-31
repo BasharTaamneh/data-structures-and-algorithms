@@ -24,7 +24,7 @@ class Node:
     ---
     | __init__(self, data): | ==> instantiate data structure with nodes data
 
-    | Add(self, value): | ==> To adding into a tree ware use the same node class created above and add a Add class to it. The insert class compares the value of the node to the parent node and decides to add it as a left node or a right node.
+    | Add(self, value): | ==> To adding into a tree ware use the same node class created above and add a new node to it. The Add method compares the value of the node to the parent node and decides to add it as a left node or a right node.
     The largest numbers from the root to the right and the least numbers to the left.
 
     Argoments: value --> (Number to add)
@@ -168,12 +168,12 @@ if __name__ == "__main__":
     #                      310
 
     # Searching for a value in a tree involves comparing the incoming value with the value exiting nodes. Here also traverse the nodes from left to right and then finally with the parent. returns True OR False.
-    print(root.contain(1000))
-    print(root.contain(10))
+    print(root.contain(1000))  # 1000 is not found / False
+    print(root.contain(10))  # 10 is found / True
     # print(root.contain(1020))
     # print(root.contain(100))
 
     BT = BinaryTree()
-    # print(BT.inorder(root))
-    # print(BT.Preorder(root))
-    print(BT.Postorder(root))
+    # print(BT.inorder(root))  # [10, 15, 27, 35, 100, 201, 310, 310, 310]
+    # print(BT.Preorder(root))  # [27, 15, 10, 35, 100, 201, 310, 310, 310]
+    print(BT.Postorder(root))  # [10, 15, 310, 310, 310, 201, 100, 35, 27]
