@@ -141,7 +141,8 @@ class BinaryTree:
         return self.res
 
     def tree_max_(self, root):
-        max_ = 0
+        max_ = root.data
+        # print(max_)
         for i in self.inorder(root):
             if max_ < i:
                 max_ = i
