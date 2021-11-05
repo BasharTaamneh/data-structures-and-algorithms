@@ -38,7 +38,7 @@ class KTree:
 
 if __name__ == "__main__":
     list_ = []
-    for _ in range(1,75,3):
+    for _ in range(0, 16):
         list_.append(_)
-    ktree = KTree(4, list_)
+        ktree = KTree(4, list_)
     print(ktree.fizz_buzz_tree())
