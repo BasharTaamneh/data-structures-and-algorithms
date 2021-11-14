@@ -12,3 +12,13 @@ def test_insertion_sort_1():
     # expected
     expected = [4, 8, 15, 16, 23, 42]
     assert actual == expected
+
+
+def test_insertion_sort_2():
+    # Arrange
+    arr = [5, 12, 7, 5, 5, 7]
+    # actual
+    actual = InsertionSort(arr)
+    # expected
+    expected = [5, 5, 5, 7, 7, 12]
+    assert actual == expected
