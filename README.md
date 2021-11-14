@@ -16,7 +16,12 @@ ___
 | linked_list_zip  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_zip/)    |
 | stack_queue_pseudo  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_pseudo/)    |
 | stack_queue_animal_shelter  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_animal_shelter/)    |
-
+| stack_queue_brackets  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_brackets/)    |
+| trees  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/trees/)    |
+| max_tree  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/max_tree/)    |
+| tree_bsf  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/tree_bsf/)    |
+| tree_fizz_buzz  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/tree_fizz_buzz/)    |
+| Insertion_Sort  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/Insertion_Sort/)    |
 ___
 
 ### Folder and Challenge Setup
