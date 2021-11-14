@@ -22,6 +22,7 @@ ___
 | tree_bsf  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/tree_bsf/)    |
 | tree_fizz_buzz  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/tree_fizz_buzz/)    |
 | Insertion_Sort  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/Insertion_Sort/)    |
+
 ___
 
 ### Folder and Challenge Setup
