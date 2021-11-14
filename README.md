@@ -10,14 +10,12 @@ ___
  | array-insert-shift  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-insert-shift/)    |
 | array-binary-search  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/code_challenges/array-binary-search/)    |
 | linked_list  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/)    |
-
-
-
-
 | linked_list_kth  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_kth)    |
-
-
 | linked_list_insertions  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_insertions/)    |
+| stacks_and_queues  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stacks_and_queues/)    |
+| linked_list_zip  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/linked_list_zip/)    |
+| stack_queue_pseudo  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_pseudo/)    |
+| stack_queue_animal_shelter  | [link](https://bashartaamneh.github.io/data-structures-and-algorithms/python/linked_list/stack_queue_animal_shelter/)    |
 
 ___
 
