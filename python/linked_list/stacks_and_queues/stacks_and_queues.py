@@ -22,10 +22,8 @@ class Queue:
 
         if self.front is None:
             raise Exception("Dequeue from empty queue.")
-
         value = self.front.value
         self.front = self.front.next
-
         if self.front is None:
             self.rear = None
         return value
