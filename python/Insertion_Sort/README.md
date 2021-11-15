@@ -28,4 +28,4 @@
 
 ## whiteboard proces
 
-![](insertion_sort.png)
+![](InsertionSort.png)
