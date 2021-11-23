@@ -79,8 +79,6 @@ class LinkedList:
 
     def __str__(self):
 
-    def to_string(self):
-
         """
         Returns a formatted string representing all the values in the Linked List.
         Arguments:
