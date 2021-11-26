@@ -79,12 +79,12 @@ class HashTable():
             Return: --> Boolean.
     """
 
-    def __init__(self, size=1024):
+    def __init__(self, size=2048):
         self.__size = size
         self.__buckets = [None] * self.__size
 
     def __hash(self, key):
-        return (sum([ord(char) for char in key]) * 512 % self.__size)
+        return (sum([ord(char) for char in key]) * 4 % self.__size)
 
     def contains(self, key):
         if self.__buckets[self.__hash(key)]:
