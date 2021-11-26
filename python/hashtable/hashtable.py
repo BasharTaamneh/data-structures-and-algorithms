@@ -105,6 +105,14 @@ class HashTable():
 
         self.__buckets[index].insert([key, value])
 
+    def get_keys(self):
+        keys = []
+        for bucket in self.__buckets:
+            if bucket:
+                key = bucket.head.value[0]
+                keys.append(key)
+        return keys
+
     def get(self, key):
         index = self.__hash(key)
 
