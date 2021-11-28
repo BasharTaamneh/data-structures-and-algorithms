@@ -144,20 +144,21 @@ class BinaryTree:
 
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 #     # create a Node class and add assign a value to the node. This becomes tree with only a root node
-#     root = Node(27)
+    root = Node(27)
 
 #     # To Add() into a tree we use the same node class created above and add a insert class to it. The insert class compares the value of the node to the parent node and decides to add it as a left node or a right node.
-#     root.Add(15)
-#     root.Add(35)
-#     root.Add(10)
-#     root.Add(100)
-#     root.Add(201)
-#     root.Add(310)
-#     root.Add(310)
-#     root.Add(310)
-#     root.Add(3010)
+    root.Add(15)
+    root.Add(35)
+    root.Add(10)
+    root.Add(100)
+    root.Add(201)
+    root.Add(-5)
+    root.Add(310)
+    root.Add(310)
+    root.Add(310)
+    root.Add(3010)
 
 #     #          27
 #     #       /     \
@@ -179,8 +180,8 @@ class BinaryTree:
 #     # print(root.contain(1020))
 #     # print(root.contain(100))
 
-#     BT = BinaryTree()
-#     print(BT.inorder(root))  # [10, 15, 27, 35, 100, 201, 310, 310, 310]
+    BT = BinaryTree()
+    print(BT.inorder(root))  # [10, 15, 27, 35, 100, 201, 310, 310, 310]
 #     # print(BT.Preorder(root))  # [27, 15, 10, 35, 100, 201, 310, 310, 310]
 #     # print(BT.Postorder(root))  # [10, 15, 310, 310, 310, 201, 100, 35, 27]
 #     print(BT.tree_max_())

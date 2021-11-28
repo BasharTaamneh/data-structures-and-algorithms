@@ -3,15 +3,16 @@ from collections import deque
 
 class Vertex:
     """
-    Class for Adding a node to the graph
-    Arguments: value
-    Returns: The added node
-    """
+  Class for Adding a node to the graph
+  Arguments: value
+  Returns: The added node
+  """
 
     def __init__(self, value):
         """
-        Initalization for a Vertex to hold a value.
-        """
+    Initalization for a Vertex to hold a value.
+
+    """
         self.value = value
 
 
@@ -20,7 +21,7 @@ class Queue:
         self.dq = deque()
 
     def enqueue(self, value):
-        self.dq.appendLeft(value)
+        self.dq.appendleft(value)
 
     def dequeue(self):
         self.dq.pop()
@@ -32,36 +33,36 @@ class Queue:
 class Stack:
     def __init__(self):
         """
-        The constructor method for the stack class and it initializes the dq property to a new double ended queue instance.
-        """
+		The constructor method for the stack class and it initializes the dq property to a new double ended queue instance.
+		"""
         self.dq = deque()
 
     def push(self, value):
         """
-        Store the passed value in a node and then push the node on top of the stack.
+		Store the passed value in a node and then push the node on top of the stack.
 
-        PARAMETERS
-        ----------
-        value: any
-        The value that will get stored in a node to be pushed on top of the stack.
-        """
+		PARAMETERS
+		----------
+			value: any
+				The value that will get stored in a node to be pushed on top of the stack.
+		"""
         self.dq.append(value)
 
     def pop(self):
         """
-        Return the top node in a stack.
-        """
+		Return the top node in a stack.
+		"""
         self.dq.pop()
 
 
 class Edge:
     """
-      a class for Adding a new edge between two nodes in the graph
-      If specified, assigning a weight to the edge
-      Arguments: 2 nodes to be connected by the edge, weight (optional)
-      Returns: nothing
+    a class for Adding a new edge between two nodes in the graph
+    If specified, assigning a weight to the edge
+    Arguments: 2 nodes to be connected by the edge, weight (optional)
+    Returns: nothing
 
-    """
+  """
 
     def __init__(self, vertex, weight):
         self.vertex = vertex
@@ -71,16 +72,16 @@ class Edge:
 class Graph:
     def __init__(self):
         """
-        Initalization for a hashmap to hold the vertices
-        """
+    Initalization for a hashmap to hold the vertices
+    """
         self.__adjacency_list = {}
 
     def add_node(self, value):
         """
-          Method for Adding a node to the graph
-          Arguments: value
-          Returns: The added node
-        """
+      Method for Adding a node to the graph
+      Arguments: value
+      Returns: The added node
+    """
         # new node
         v = Vertex(value)
         self.__adjacency_list[v] = []
@@ -102,31 +103,60 @@ class Graph:
 
     def get_nodes(self):
         """
-        Method to get all nodes in Graph
-        Arguments: None
-        return: All nodes
-        """
+    Method to get all nodes in Graph
+    Arguments: None
+    return: All nodes
+    """
         return self.__adjacency_list.keys()
 
     def get_neighbors(self, vertex):
         """ """
         return self.__adjacency_list.get(vertex, [])
 
-    def breadth_first_search(self, start_vertex, action=(lambda vertex: None)):
-        queue = Queue()
+
+    def breadth_first_search(self, start_vertex, action=(lambda start_vertex: None)):
+        queue = []
         visited = set()
+        nodes = []
+        try:
+            queue.append(start_vertex)
+            visited.add(start_vertex)
 
-        queue.enqueue(start_vertex)
-        visited.add(start_vertex)
+            while len(queue):
 
-        while len(queue):
-            current_vertex = queue.dequeue()
-            action(current_vertex)
+                current_vertex = queue.pop(0)
+                nodes.append(current_vertex.value)
+                action(current_vertex)
+                neighbors = self.get_neighbors(current_vertex)
 
-            neighbors = self.get_neigbors(current_vertex)
+                for edge in neighbors:
+                    neighbor = edge.vertex
+                    if neighbor not in visited:
+                        visited.add(neighbor)
+                        queue.append(neighbor)
 
-            for edge in neighbors:
-                neighbor = edge.vertex
-                if neighbor not in visited:
-                    visited.add(neighbor)
-                    queue.enqueue(neighbor)
+            return nodes
+        except:
+            raise Exception("TypeError: please check your input and try again with valid input")
+
+
+graph = Graph()
+v1 = graph.add_node(1)
+v2 = graph.add_node(2)
+v3 = graph.add_node(10)
+v4 = graph.add_node(4)
+v5 = graph.add_node(5)
+
+graph.add_edge(v1, v2)
+
+graph.add_edge(v2, v4)
+
+graph.add_edge(v3, v5)
+
+graph.add_edge(v4, v3)
+
+graph.add_edge(v5, v1)
+
+print(graph.breadth_first_search(v4))
+
+
