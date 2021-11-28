@@ -118,26 +118,26 @@ class Graph:
         queue = []
         visited = set()
         nodes = []
+        try:
+            queue.append(start_vertex)
+            visited.add(start_vertex)
 
-        queue.append(start_vertex)
-        visited.add(start_vertex)
+            while len(queue):
 
-        while len(queue):
+                current_vertex = queue.pop(0)
+                nodes.append(current_vertex.value)
+                action(current_vertex)
+                neighbors = self.get_neighbors(current_vertex)
 
-            current_vertex = queue.pop(0)
-            nodes.append(current_vertex.value)
-            action(current_vertex)
-            neighbors = self.get_neighbors(current_vertex)
+                for edge in neighbors:
+                    neighbor = edge.vertex
+                    if neighbor not in visited:
+                        visited.add(neighbor)
+                        queue.append(neighbor)
 
-            for edge in neighbors:
-                neighbor = edge.vertex
-
-                if neighbor not in visited:
-                    visited.add(neighbor)
-                    queue.append(neighbor)
-
-        return nodes
-
+            return nodes
+        except:
+            raise Exception("TypeError: please check your input and try again with valid input")
 
 
 graph = Graph()
@@ -157,4 +157,6 @@ graph.add_edge(v4, v3)
 
 graph.add_edge(v5, v1)
 
-print(graph.breadth_first_search(v1))
+print(graph.breadth_first_search(v4))
+
+
