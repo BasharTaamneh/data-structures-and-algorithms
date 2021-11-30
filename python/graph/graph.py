@@ -16,6 +16,7 @@ class Vertex:
         self.value = value
 
 
+
 class Queue:
     def __init__(self):
         self.dq = deque()
@@ -29,31 +30,39 @@ class Queue:
     def __len__(self):
         return len(self.dq)
 
-
 class Stack:
+    """
+        Stack class creates Stack instances.
+        Arguments: None
+        Methods:
+            push
+                This method adds a Node to the top of stack.
+                Arguments: value: any
+                Return: None
+            pop
+                This method removes a Node to the top of stack.
+                Arguments: None
+                Return: None
+            peek
+                This method returns the Node on top of stack.
+                Arguments: None
+                Return: Node
+    """
+
     def __init__(self):
-        """
-		The constructor method for the stack class and it initializes the dq property to a new double ended queue instance.
-		"""
         self.dq = deque()
 
-    def push(self, value):
-        """
-		Store the passed value in a node and then push the node on top of the stack.
+    def __len__(self):
+        return len(self.dq)
 
-		PARAMETERS
-		----------
-			value: any
-				The value that will get stored in a node to be pushed on top of the stack.
-		"""
+    def push(self, value):
         self.dq.append(value)
 
     def pop(self):
-        """
-		Return the top node in a stack.
-		"""
-        self.dq.pop()
+        return self.dq.pop()
 
+    def peek(self):
+        return self.dq[-1]
 
 class Edge:
     """
@@ -139,24 +148,61 @@ class Graph:
         except:
             raise Exception("TypeError: please check your input and try again with valid input")
 
+    def depth_first_search(self, start_vertex):
+        stack = []
+        visited = set()
+        nodes = []
+        try:
+            stack.append(start_vertex)
+            visited.add(start_vertex)
 
-graph = Graph()
-v1 = graph.add_node(1)
-v2 = graph.add_node(2)
-v3 = graph.add_node(10)
-v4 = graph.add_node(4)
-v5 = graph.add_node(5)
+            while len(stack):
 
-graph.add_edge(v1, v2)
+                current_vertex = stack.pop()
+                nodes.append(current_vertex.value)
+                neighbors = self.get_neighbors(current_vertex)
+                for edge in neighbors:
+                    neighbor = edge.vertex
+                    if neighbor not in visited:
+                        visited.add(neighbor)
+                        stack.append(neighbor)
 
-graph.add_edge(v2, v4)
+            return nodes
+        except:
+            raise Exception(
+                "TypeError: please check your input and try again with valid input")
 
-graph.add_edge(v3, v5)
+# graph = Graph()
+# A = graph.add_node("A")
+# B = graph.add_node("B")
+# C = graph.add_node("C")
+# D = graph.add_node("D")
+# E = graph.add_node("E")
+# F = graph.add_node("F")
+# G = graph.add_node("G")
+# H = graph.add_node("H")
 
-graph.add_edge(v4, v3)
+# graph.add_edge(A, B)
 
-graph.add_edge(v5, v1)
+# graph.add_edge(A, D)
 
-print(graph.breadth_first_search(v4))
+# graph.add_edge(B, C)
+
+# graph.add_edge(B, D)
+
+# graph.add_edge(C, G)
+
+# graph.add_edge(D, E)
+
+# graph.add_edge(D, H)
+
+# graph.add_edge(D, F)
+
+# graph.add_edge(H, F)
+
+
+# print(graph.breadth_first_search(A))
+# print(graph.depth_first_search(A))
+
 
 

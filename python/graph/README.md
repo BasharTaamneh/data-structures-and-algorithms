@@ -111,3 +111,34 @@
 ![](Graph_BFS.png)
 ---------------------------------------------------------------------------
 ## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/41)
+
+
+---------
+# > Graph - DFS
+
+
+## Challenge
+
+- implement Graph_DFS pre-order function.
+
+<br>
+
+## Approach & Efficiency
+
+> Time --> O(n log n)
+
+> Spase --> O(n)
+
+<br>
+
+## Testing Goals
+
+- Graph_dfs
+
+- [x] [test_graph_depth_first_search_1](../tests/test_graph_dfs.py)
+- [x] [test_graph_depth_first_search_2](../tests/test_graph_dfs.py)
+
+## whiteboard process
+![]()
+---------------------------------------------------------------------------
+## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/41)
