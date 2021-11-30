@@ -137,8 +137,8 @@
 
 - [x] [test_graph_depth_first_search_1](../tests/test_graph_dfs.py)
 - [x] [test_graph_depth_first_search_2](../tests/test_graph_dfs.py)
-
+- [x] [test_graph_depth_first_search_3](../tests/test_graph_dfs.py)
 ## whiteboard process
-![]()
+![](GRAF_DFS_PRE_ORDER.png)
 ---------------------------------------------------------------------------
 ## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/43)

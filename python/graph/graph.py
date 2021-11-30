@@ -172,37 +172,8 @@ class Graph:
             raise Exception(
                 "TypeError: please check your input and try again with valid input")
 
-# graph = Graph()
-# A = graph.add_node("A")
-# B = graph.add_node("B")
-# C = graph.add_node("C")
-# D = graph.add_node("D")
-# E = graph.add_node("E")
-# F = graph.add_node("F")
-# G = graph.add_node("G")
-# H = graph.add_node("H")
-
-# graph.add_edge(A, B)
-
-# graph.add_edge(A, D)
-
-# graph.add_edge(B, C)
-
-# graph.add_edge(B, D)
-
-# graph.add_edge(C, G)
-
-# graph.add_edge(D, E)
-
-# graph.add_edge(D, H)
-
-# graph.add_edge(D, F)
-
-# graph.add_edge(H, F)
 
 
-# print(graph.breadth_first_search(A))
-# print(graph.depth_first_search(A))
 
 
 
