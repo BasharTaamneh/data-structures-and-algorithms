@@ -80,3 +80,65 @@
 
 ---------------------------------------------------------------------------
 ## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/40)
+
+----
+
+# > Graph - BFS
+
+
+## Challenge
+
+- implement Graph_BFS function.
+
+<br>
+
+## Approach & Efficiency
+
+> Time --> O(n log n)
+
+> Spase --> O(n)
+
+<br>
+
+## Testing Goals
+
+- Graph_bfs
+
+- [x] [test_graph_breadth_first_search_1](../tests/test_graph_bfs.py)
+- [x] [test_graph_breadth_first_search_2](../tests/test_graph_bfs.py)
+
+## whiteboard process
+![](Graph_BFS.png)
+---------------------------------------------------------------------------
+## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/41)
+
+
+---------
+# > Graph - DFS
+
+
+## Challenge
+
+- implement Graph_DFS pre-order function.
+
+<br>
+
+## Approach & Efficiency
+
+> Time --> O(n log n)
+
+> Spase --> O(n)
+
+<br>
+
+## Testing Goals
+
+- Graph_dfs
+
+- [x] [test_graph_depth_first_search_1](../tests/test_graph_dfs.py)
+- [x] [test_graph_depth_first_search_2](../tests/test_graph_dfs.py)
+- [x] [test_graph_depth_first_search_3](../tests/test_graph_dfs.py)
+## whiteboard process
+![](GRAF_DFS_PRE_ORDER.png)
+---------------------------------------------------------------------------
+## [PR](https://github.com/BasharTaamneh/data-structures-and-algorithms/pull/43)
