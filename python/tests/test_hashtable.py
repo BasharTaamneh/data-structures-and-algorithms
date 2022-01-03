@@ -4,7 +4,7 @@ from hashtable.hashtable import HashTable
 def test_hash_table():
     # Arrange
     hashtable = HashTable()
-    excepted = 1024
+    excepted = 2048
     #Act
     actual = hashtable._HashTable__size
     #Assert
@@ -14,7 +14,7 @@ def test_hash_table():
 def test_hash_table_hash():
     # Arrange
     hashtable = HashTable()
-    excepted = 512
+    excepted = 388
     #Act
     actual = hashtable._HashTable__hash('a')
     #Assert
@@ -24,7 +24,7 @@ def test_hash_table_hash():
 def test_hash_table_hash_range():
     # Arrange
     hashtable = HashTable()
-    excepted = 0
+    excepted = 1656
     #Act
     actual = hashtable._HashTable__hash('bash')
     #Assert
@@ -34,8 +34,8 @@ def test_hash_table_hash_range():
 def test_hash_table_hash_collision():
     # Arrange
     hashtable = HashTable()
-    excepted_1 = 512
-    excepted_2 = 512
+    excepted_1 = 524
+    excepted_2 = 540
     #Act
     actual_1 = hashtable._HashTable__hash('AB')
     actual_2 = hashtable._HashTable__hash('CD')
